@@ -4,8 +4,10 @@ const student = {
 	age : 30,
 	city : "New York"
 };
-let ans = getKeys(student);
+Object.prototype.getKeys = function () {
+  return Object.keys(this);
+};
  
-console.log(ans);
+console.log(student.getKeys());
 
 
