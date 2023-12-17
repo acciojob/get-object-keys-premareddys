@@ -4,7 +4,8 @@ const student = {
 	age : 30,
 	city : "New York"
 };
-const keys = Object.keys(student);
+let ans = getKeys(student);
+ 
+console.log(ans);
 
-document.getElementById("getKeys").innerHTML = keys;
 
